@@ -1,12 +1,14 @@
-import "./App.css";
+import React from 'react'
+import Header from './Components/Header/Header'
+import Footer from './Components/Footer/Footer'
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <h1>Netflix Clone</h1>
-      <p>Welcome to my Netflix Clone Project</p>
-    </div>
-  );
+    <>
+      <Header />
+      <Footer />
+    </>
+  )
 }
 
-export default App;
+export default App
