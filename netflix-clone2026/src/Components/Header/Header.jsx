@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-// import "../../assets/images/NetflixLogo.png";
+import logo from "../../assets/images/NetflixLogo.png";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
@@ -13,10 +13,10 @@ const Header = () => {
     <div className="header-outer-container">
       <div className="header-inner-container">
         <div className="header-left">
-          
-
           {/* Netflix Logo */}
-          <h2 className="logo">NETFLIX</h2>
+          {/* <h2 className="logo">NETFLIX</h2> */}
+
+          <img src={logo} alt="Netflix Logo" className="netflix-logo" />
 
           <ul>
             {/* <li><img src="../../assets/images/NetflixLogo.png" width="100" alt="Netflix Logo" /></li> */}
@@ -32,10 +32,18 @@ const Header = () => {
 
         <div className="header-right">
           <ul>
-            <li><SearchIcon /></li>
-            <li><NotificationsIcon /></li>
-            <li><AccountBoxIcon /></li>
-            <li><ArrowDropDownIcon /></li>
+            <li>
+              <SearchIcon />
+            </li>
+            <li>
+              <NotificationsIcon />
+            </li>
+            <li>
+              <AccountBoxIcon />
+            </li>
+            <li>
+              <ArrowDropDownIcon />
+            </li>
           </ul>
         </div>
       </div>

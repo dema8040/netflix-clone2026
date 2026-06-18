@@ -35,9 +35,14 @@
     flex-wrap: nowrap;
     /* background-color: aquamarine; */
     }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
   
   
-  .logo {
+  /* .logo {
     color: #e50914;
     font-size: 32px;
     font-weight: bold;
@@ -46,12 +51,16 @@
     margin-left: 0;
     margin-right: 25px;
     white-space: nowrap;
-    /* flex-direction: row; */
+    flex-direction: row;
     align-items: left;
-    /* justify-content: center; */
+    justify-content: center;
+  } */
 
-    
-
+  .netflix-logo {
+    width: 100px;
+    height: auto;
+    margin-right: 25px;
+    cursor: pointer;
   }
 
   
